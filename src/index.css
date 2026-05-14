@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(120deg, #e0eafc, #cfdef3);
+}
+/* COMMON CARD STYLE */
+.section {
+  padding: 30px;
+  border-radius: 18px;
+  margin: 25px 0;
+
+  /* IMPORTANT: this creates separation */
+  background: rgba(246, 47, 47, 0.85);
+
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+/* SERVICES - warm orange */
+.section-services {
+  background: #ffe0b2;
+}
+
+/* UPDATE BOOKING - light green */
+.section-update {
+  background: #76f3a2;
+}
+
+/* ADMIN - dark professional */
+.section-admin {
+  background: #2f3542;
+  color: white;
+}
+/* SERVICE CARD */
+.service-card {
+  transition: 0.3s;
+  border-radius: 12px;
+  background: white;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* TABLE */
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* INPUT */
+.form-control {
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.btn {
+  border-radius: 8px;
+}
+.container {
+  background: transparent !important;
+}
+.section {
+  background-clip: padding-box;
+}
