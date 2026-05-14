@@ -5,49 +5,25 @@ const API = axios.create({
 });
 
 export const getServices = () => {
-
-  return axios.get(
-    `${BASE_URL}/services`
-  );
+  return API.get("/services");
 };
 
-export const createAppointment =
-  (data) => {
-
-  return axios.post(
-    `${BASE_URL}/appointments`,
-    data
-  );
+export const createAppointment = (data) => {
+  return API.post("/appointments", data);
 };
 
 export const getAppointments = () => {
-
-  return axios.get(
-    `${BASE_URL}/appointments`
-  );
+  return API.get("/appointments");
 };
 
-export const deleteAppointment =
-  (id) => {
-
-  return axios.delete(
-    `${BASE_URL}/appointments/${id}`
-  );
+export const deleteAppointment = (id) => {
+  return API.delete(`/appointments/${id}`);
 };
 
-export const updateAppointment =
-  (id, data) => {
-
-  return axios.put(
-    `${BASE_URL}/appointments/${id}`,
-    data
-  );
+export const updateAppointment = (id, data) => {
+  return API.put(`/appointments/${id}`, data);
 };
 
-export const getAppointmentByPhone =
-  (phone) => {
-
-  return axios.get(
-    `${BASE_URL}/appointments/phone/${phone}`
-  );
+export const getAppointmentByPhone = (phone) => {
+  return API.get(`/appointments/phone/${phone}`);
 };
